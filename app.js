@@ -361,13 +361,13 @@ app.get("/register-admin",function(req,res){
 
 app.post("/register-admin",function(req,res){
  
-  if(req.body.admincode === ADMIN_CODE)
+  if(req.body.admincode === "Admin@123")
   {
      
     User.register({username:req.body.username}, req.body.password, function(err, user) {
       if (err) 
       {
-        res.redirect("/regiter");
+        res.redirect("/register-admin");
       }
     
       else{
