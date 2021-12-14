@@ -25,6 +25,7 @@ Project is created with:
 fristly go to the root directory path,then
 To run this project, install it locally using npm:
 
-
+```
 $ npm install
 $ node .\app.js
+```
